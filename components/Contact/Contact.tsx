@@ -39,7 +39,7 @@ function Contact() {
       await transporter.sendMail({
         to: "best4ah@gmail.com",
         from: process.env.SMTP_USERNAME,
-        subject: `Un neveu LPMPS Message -- ${Date.now()}`,
+        subject: `Un neveu LPTAS Message -- ${Date.now()}`,
         text: `ENVOYER PAR: ${name}\nEMAIL: ${email}\n\nLE MESSAGE: \n${message}\nLE: ${formattedDate}
           `,
       });

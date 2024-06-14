@@ -29,7 +29,7 @@ function ContactInfo() {
           Site web
         </Heading>
         <Text>
-          <Link href="https://lpmps-labo.org">lpmps-labo.org</Link>
+          <Link href="https://lptas-labo.org">lptas-labo.org</Link>
         </Text>
       </div>
     </div>
