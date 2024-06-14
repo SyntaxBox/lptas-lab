@@ -7,7 +7,7 @@ const config = defineConfig({
   name: "default",
   projectId: 'g3hmfne0',
   dataset: 'production',
-  title: 'LPMPS - Laboratoire de Physique Mathématique et Physique Subatomique',
+  title: 'LPTAS',
   basePath: '/admin',
   plugins: [deskTool()],
   schema: {
