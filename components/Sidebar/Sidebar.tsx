@@ -71,7 +71,6 @@ export default async function Sidebar() {
   // let seminaires = await getLastSeminaires();
   let posts = [...postsData, ...postsData]; // dummy
   let seminaires = seminairesData; // dummy
-  console.log(seminaires);
   posts = posts.map((obj) => ({ ...obj, type: "publications" }));
   seminaires = seminaires.map((obj) => ({ ...obj, type: "seminaires" }));
 

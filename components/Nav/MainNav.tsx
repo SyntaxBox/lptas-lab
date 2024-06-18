@@ -7,6 +7,7 @@ import { groq } from "next-sanity";
 import { client } from "@/lib/sanity";
 import { EquipeQuery } from "@/types";
 import { equipesData } from "@/dummyData";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 async function getTeams() {
   const query = groq`*[_type == "team"][$start...$end] | order(_createdAt asc) {
@@ -43,8 +44,14 @@ async function MainNav() {
 
           <NavLink href="/publications">Publications</NavLink>
           <NavLink href="/seminaires">Seminaires</NavLink>
-          <NavLink href="/formations">Formations</NavLink>
           <NavLink href="/contact">Contact</NavLink>
+          <NavLink
+            href="https://github.com/cargopip/lptas-lab"
+            className="flex items-center gap-2"
+          >
+            <IconBrandGithub />
+            Repo
+          </NavLink>
         </div>
       </div>
     </nav>

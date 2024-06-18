@@ -9,7 +9,7 @@ import {
   DrawerHeader,
   DrawerBody,
 } from "@chakra-ui/react";
-import { IconMenu2 } from "@tabler/icons-react";
+import { IconBrandGithub, IconMenu2 } from "@tabler/icons-react";
 import React, { useEffect, useRef, useState } from "react";
 import Logo from "../Logo/Logo";
 import { usePathname } from "next/navigation";
@@ -87,8 +87,15 @@ function LeftMenu() {
               />
               <NavLink href="/publications">Publications</NavLink>
               <NavLink href="/seminaires">Seminaires</NavLink>
-              <NavLink href="/formations">Formations</NavLink>
+
               <NavLink href="/contact">Contact</NavLink>
+              <NavLink
+                href="https://github.com/cargopip/lptas-lab"
+                className="flex items-center gap-2"
+              >
+                <IconBrandGithub />
+                Repo
+              </NavLink>
             </nav>
           </DrawerBody>
         </DrawerContent>

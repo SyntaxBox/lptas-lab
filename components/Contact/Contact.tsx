@@ -35,7 +35,6 @@ function Contact() {
       hour12: false,
     });
     try {
-      console.log("hello");
       await transporter.sendMail({
         to: "best4ah@gmail.com",
         from: process.env.SMTP_USERNAME,
